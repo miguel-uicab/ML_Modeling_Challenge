@@ -1,0 +1,27 @@
+model:
+  name: CatBoost
+  seed: 5000
+  artifact_path: models/catboost_optimized.joblib
+features:
+  selected:
+  - feature_2
+  - feature_13
+  - feature_9
+  - feature_18
+  - feature_11
+  selected_by_mi:
+  - feature_2
+  - feature_13
+  - feature_16
+  - feature_9
+  - feature_3
+  - feature_18
+  - feature_11
+  - feature_5
+  - feature_1
+  - feature_12
+  - feature_15
+  - feature_4
+data:
+  train_path: data/training_data.csv
+  blind_test_path: data/blind_test_data.csv
