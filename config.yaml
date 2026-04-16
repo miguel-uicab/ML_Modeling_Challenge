@@ -8,10 +8,10 @@ model:
     r2_cv: 0.880168
     fugacity_smape_cv: 23.5
   cv_metrics_optimized:
-    mape_cv: 13.862046
-    smape_cv: 11.198466
-    r2_cv: 0.885167
-    fugacity_smape_cv: 23.5
+    mape_cv: 13.740191
+    smape_cv: 11.079554
+    r2_cv: 0.887569
+    fugacity_smape_cv: 22.75
 features:
   selected_by_mi:
   - feature_2
