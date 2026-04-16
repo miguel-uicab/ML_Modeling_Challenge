@@ -1,14 +1,18 @@
 model:
   name: CatBoost
   seed: 5000
+  cv_folds: 5
   artifact_path: models/catboost_optimized.joblib
+  cv_metrics_v2:
+    smape_cv: 11.385998
+    r2_cv: 0.880168
+    fugacity_smape_cv: 23.5
+  cv_metrics_optimized:
+    mape_cv: 13.862046
+    smape_cv: 11.198466
+    r2_cv: 0.885167
+    fugacity_smape_cv: 23.5
 features:
-  selected:
-  - feature_2
-  - feature_13
-  - feature_9
-  - feature_18
-  - feature_11
   selected_by_mi:
   - feature_2
   - feature_13
@@ -22,6 +26,12 @@ features:
   - feature_12
   - feature_15
   - feature_4
+  selected_v2:
+  - feature_2
+  - feature_13
+  - feature_9
+  - feature_18
+  - feature_11
 data:
   train_path: data/training_data.csv
   blind_test_path: data/blind_test_data.csv

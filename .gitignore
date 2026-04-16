@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+
+# Ruff cache
+.ruff_cache/
+
+# CatBoost training logs
+catboost_info/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
