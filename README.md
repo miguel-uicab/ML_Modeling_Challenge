@@ -66,7 +66,7 @@ El modelo __CatBoost__ optimizado tiene las siguientes métricas de Train y de C
 
 <div align="center">
 
-| SMAPE_TRAIN | SMAPE_CV | R2_TRAIN | R2_CV |
+| SMAPE_TRAIN | SMAPE_CV | R²_TRAIN | R²_CV |
 |:-----------:|:--------:|:--------:|:-----:|
 |    6.76 %   |  11.07 % |   0.96   | 0.89  |
 
@@ -76,7 +76,7 @@ Las métricas de CV son la referencia confiable del rendimiento generalizable de
 
 #### __*2.5 Predecir los valores objetivo para el blind test dataset.*__
 
-Las predicciones se generan en __*4.Blind_Test_Data_Prediction.ipynb*__ cargando el modelo desde `models/catboost_optimized.joblib`. Como validación adicional, se comparó la distribución de las predicciones con la del target de entrenamiento mediante un histograma superpuesto, confirmando que ambas distribuciones tienen formas similares y el mismo rango (30), sin predicciones fuera de dominio.
+Las predicciones se generan en __*4.Blind_Test_Data_Prediction.ipynb*__ cargando el modelo desde `models/catboost_optimized.joblib`. Como validación adicional, se comparó la distribución de las predicciones con la del target de entrenamiento mediante un histograma superpuesto, confirmando que ambas distribuciones tienen formas similares y el mismo rango (0-30), sin predicciones fuera de dominio.
 
 Las predicciones para las 200 observaciones están localizadas en `data/predictions.csv` y la columna de valores predichos es `target_pred`.
 

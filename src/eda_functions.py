@@ -435,7 +435,7 @@ def get_train_test_comparison(
         fig.update_xaxes(title_text=feature, row=row, col=col)
 
     fig.update_layout(
-        title_text="Comparación de distribuciones Train vs Test (Covariate Shift)",
+        title_text="Comparación de distribuciones Train vs Test",
         barmode="overlay",
         height=350 * n_rows,
         width=1200,
